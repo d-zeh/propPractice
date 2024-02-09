@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+import contacts from "./contacts";
 
 ReactDOM.render(
 
@@ -11,7 +12,12 @@ ReactDOM.render(
 
 <App name="Chuck Norris" image="https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png" number="+918 372 574" email="gmail@chucknorris.com" />
 
-
+<App
+name = {contacts[0].name}
+image = {contacts[0].imgURL}
+number = {contacts[0].phone}
+email = {contacts[0].email}
+/>
 
 
 
